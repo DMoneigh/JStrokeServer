@@ -16,7 +16,7 @@ import java.util.Date;
 public class JStrokeServer extends Object {
 
 	/**
-	 * The main class.
+	 * The main method.
 	 * 
 	 * @param args Any string arguments passed to this program
 	 */
