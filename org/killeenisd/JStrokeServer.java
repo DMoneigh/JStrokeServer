@@ -58,16 +58,12 @@ public class JStrokeServer extends Object {
 	 */
 	private static synchronized void store(String hostname, String buffer) throws IOException {
 		File file = new File(hostname + ".txt");
-		try {
-			if (!file.exists())
-				file.createNewFile();
-			FileWriter fw = new FileWriter(file, true);
-			fw.write(new Date(System.currentTimeMillis()) + ": " + buffer);
-			fw.write("\n\n");
-			fw.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		if (!file.exists())
+			file.createNewFile();
+		FileWriter fw = new FileWriter(file, true);
+		fw.write(new Date(System.currentTimeMillis()) + ": " + buffer);
+		fw.write("\n\n");
+		fw.close();
 	}
 
 }
