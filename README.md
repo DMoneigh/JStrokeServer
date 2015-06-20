@@ -1,6 +1,6 @@
 JStrokeServer
 ========
-<script>alert(2);</script>
+
 An Open-Source Java Keylogger Server
 
 Download Jar
